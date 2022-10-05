@@ -21,7 +21,7 @@ export default function App() {
         <View style={{ flex: 1 }}>
             <View style={styles.container}>
                 <Image
-                    style={{ width: 350, height: 600, margin: 4 }}
+                    style={{ width: 350, height: 600, margin: 5 }}
                     source={tabImg}
                 />
             </View>
