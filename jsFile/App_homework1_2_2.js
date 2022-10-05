@@ -19,14 +19,14 @@ export default function App() {
 
     return (
         <View style={{ flex: 1 }}>
-            <View style={styles.container}>
+            <View style={styles.container2}>
                 <Image
-                    style={{ width: 350, height: 600, margin: 4 }}
+                    style={{ width: 200, height: 300, margin: 5 }}
                     source={tabImg}
                 />
             </View>
 
-            <View style={styles.container2}>
+            <View style={styles.container}>
 
                 <TouchableOpacity >
                     <Image style={{ width: 50, height: 50, margin: 5 }}
@@ -45,19 +45,18 @@ export default function App() {
 
 const styles = StyleSheet.create({
     container: {
-        // flex: 1,
-        backgroundColor: 'black',
+        flex: 1,
+        backgroundColor: 'lightgrey',
         alignItems: 'flex-end',
         justifyContent: 'space-evenly',
         flexDirection: 'row'
     },
     container2: {
-        // flex: 1,
-        backgroundColor: 'lightgrey',
+        flex: 1,
+        backgroundColor: 'white',
         alignItems: 'flex-end',
         justifyContent: 'space-evenly',
-        flexDirection: 'row',
-        height: 60
+        flexDirection: 'row'
     },
 
 
