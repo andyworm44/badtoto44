@@ -11,24 +11,32 @@ export default function App() {
     // const clockBG = './src/img/IMG_8530.jpg'
 
     const [tabImg, setTabImg] = useState(require('./src/img/IMG_8530.jpg'))
+    //const [tabImg2, setTabImg2] = useState(require('./src/img/IMG_8529.jpg'))
 
 
     const change = () => {
         setTabImg(require('./src/img/IMG_8529.jpg'))
     }
 
+    const changeOther = () => {
+        setTabImg(require('./src/img/IMG_8530.jpg'))
+    }
+
+
     return (
         <View style={{ flex: 1 }}>
             <View style={styles.container}>
                 <Image
-                    style={{ width: 350, height: 600, margin: 10 }}
+                    style={{ width: 350, height: 600, margin: 5 }}
                     source={tabImg}
                 />
+
+
             </View>
 
             <View style={styles.container2}>
 
-                <TouchableOpacity >
+                <TouchableOpacity onPress={() => changeOther()} >
                     <Image style={{ width: 50, height: 50, margin: 5 }}
                         source={require(stopWatch)} />
                 </TouchableOpacity>
